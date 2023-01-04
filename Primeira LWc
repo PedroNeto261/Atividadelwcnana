@@ -1,3 +1,4 @@
+//--------------------------- HTML --------------------------
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
     
     <aura:attribute name="visivel1" type = "Boolean" default="False" description = "True ou False"/>
@@ -33,3 +34,5 @@
     
     
 </aura:component>
+
+//--------------------- JAVA SCRIPT----------------
