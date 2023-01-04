@@ -1,0 +1,35 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    <aura:attribute name="visivel1" type = "Boolean" default="False" description = "True ou False"/>
+	<aura:attribute name="visivel2" type="Boolean" default="False" description ="True ou False"/>
+	<aura:attribute name="visivel3" type="Boolean" default="False" description ="True ou False"/>
+    
+    <div class ="slds-box slds-theme_default">
+    
+    <lightning:button variant="brand" label="Botão 1" title="Brand action" onclick="{! c.handleClick1 }" />
+    
+    <lightning:button variant="brand" label="Botão 2" title="Brand action" onclick="{! c.handleClick2 }" />
+	
+    <lightning:button variant="brand" label="Botão 3" title="Brand action" onclick="{! c.handleClick3 }" />
+    
+    <aura:if isTrue ="{!v.visivel1}"> 
+        <img src="{!$Resource.filipeSmith}"/>
+        
+    </aura:if>
+        
+   <aura:if isTrue ="{!v.visivel2}"> 
+        <img src="{!$Resource.camisa}"/>
+        
+    </aura:if>
+    
+    <aura:if isTrue ="{!v.visivel3}"> 
+        <img src="{!$Resource.AlceuValenca}"/>
+        
+    </aura:if>
+        
+    
+    
+    </div>
+    
+    
+</aura:component>
